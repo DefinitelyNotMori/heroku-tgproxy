@@ -269,6 +269,7 @@ class InlineManager(
             self._client.api_id,
             self._client.api_hash,
             receive_updates=True,
+            proxy=getattr(self._client, "_proxy", None), # mori
         )
 
         try:

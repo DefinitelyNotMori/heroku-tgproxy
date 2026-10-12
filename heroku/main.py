@@ -551,6 +551,7 @@ class Heroku:
             "proxy_type": proxy_type,
             "addr": host,
             "port": port,
+            "rdns": True, # mori
         }
         self.conn = ConnectionTcpFull
 
